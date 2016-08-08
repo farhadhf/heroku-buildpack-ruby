@@ -3,14 +3,15 @@ require "language_pack/base"
 
 class LanguagePack::NoLockfile < LanguagePack::Base
   def self.use?
-    true #!File.exists?("Gemfile.lock")
+    false 
+    # !File.exists?("Gemfile.lock")
   end
 
   def name
-    "Ruby/NoLockfile"
+    # "Ruby/NoLockfile"
   end
 
   def compile
-    error "Gemfile.lock required. Please check it in."
+    # error "Gemfile.lock required. Please check it in."
   end
 end
