@@ -123,8 +123,8 @@ class LanguagePack::Helpers::BundlerWrapper
 
   def parse_gemfile_lock
     instrument 'parse_bundle' do
-      gemfile_contents = File.read(@gemfile_lock_path)
-      Bundler::LockfileParser.new(gemfile_contents)
+      # gemfile_contents = File.read(@gemfile_lock_path)
+      # Bundler::LockfileParser.new(gemfile_contents)
     end
   end
 end
