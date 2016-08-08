@@ -3,7 +3,7 @@ require "language_pack/base"
 
 class LanguagePack::NoLockfile < LanguagePack::Base
   def self.use?
-    false 
+    true 
     # !File.exists?("Gemfile.lock")
   end
 
